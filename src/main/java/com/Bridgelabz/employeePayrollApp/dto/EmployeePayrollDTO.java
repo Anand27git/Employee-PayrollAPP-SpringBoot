@@ -1,18 +1,23 @@
 package com.Bridgelabz.employeePayrollApp.dto;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Pattern;
+
 public class EmployeePayrollDTO {
 
-        public String name;
-        public long salary;
+    @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Employee Name Invalid")
+    public String name;
 
-        public EmployeePayrollDTO(String name, long salary) {
-        }
+    @Min(value = 5000, message = "Min Wage should be more than 500")
+    public long salary;
 
-        public EmployeePayrollDTO() {}
-
-        @Override
-        public String toString() {
-            return "EmployeePayrollDTO [name=" + name + ", salary=" + salary + "]";
-        }
+    public EmployeePayrollDTO(String name, long salary) {
+        this.name = name;
+        this.salary = salary;
     }
 
+    @Override
+    public String toString() {
+        return "EmployeePayrollDTO [name=" + name + ", salary=" + salary + "]";
+    }
+}
