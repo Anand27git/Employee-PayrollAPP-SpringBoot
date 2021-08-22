@@ -15,4 +15,3 @@ public interface IEmployeePayrollService {
 
     void deleteEmployeePayrollData(int empId);
 }
-

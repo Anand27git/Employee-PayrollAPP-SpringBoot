@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 @Service
 public class EmployeePayrollService implements IEmployeePayrollService{
 
@@ -46,3 +44,4 @@ public class EmployeePayrollService implements IEmployeePayrollService{
         employeePayrollList.remove(empId-1);
     }
 }
+
