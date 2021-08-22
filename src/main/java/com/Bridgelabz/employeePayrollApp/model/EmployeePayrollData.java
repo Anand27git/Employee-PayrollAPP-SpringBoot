@@ -1,4 +1,3 @@
-/* EmployeePayrollData.java */
 package com.Bridgelabz.employeePayrollApp.model;
 
 import com.Bridgelabz.employeePayrollApp.dto.EmployeePayrollDTO;
@@ -8,7 +7,8 @@ public class EmployeePayrollData {
     private String name;
     private long salary;
 
-    public EmployeePayrollData() {}
+    public EmployeePayrollData() {
+    }
 
     public EmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
         this.employeeId = empId;
@@ -39,5 +39,4 @@ public class EmployeePayrollData {
     public void setSalary(long salary) {
         this.salary = salary;
     }
-
 }
