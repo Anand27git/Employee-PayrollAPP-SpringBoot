@@ -1,0 +1,18 @@
+package com.Bridgelabz.employeePayrollApp.dto;
+
+public class EmployeePayrollDTO {
+
+        public String name;
+        public long salary;
+
+        public EmployeePayrollDTO(String name, long salary) {
+        }
+
+        public EmployeePayrollDTO() {}
+
+        @Override
+        public String toString() {
+            return "EmployeePayrollDTO [name=" + name + ", salary=" + salary + "]";
+        }
+    }
+
